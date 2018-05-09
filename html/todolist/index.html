@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>ToDoList</title>
+        <link rel="icon" type="image/png" href="data/icon.png" />
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+    	<link rel="stylesheet" type="text/css" href="css/purePopup.css">
+    	<link rel="stylesheet" type="text/css" href="css/css.css">
+		<script type="text/javascript" src="js/jQuery.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.js"></script>
+      	<script type="text/javascript" src="js/angular.min.js"></script>
+      	<script type="text/javascript" src="js/materialize.min.js"></script>
+      	<script type="text/javascript" src="js/underscore.js"></script>
+      	<script type="text/javascript" src="js/toDO.js"></script>
+
+	</head>
+	<body ng-app="ToDo">
+		<div class="todo-wrapper" ng-controller="ctrl">	
+			<section id="todoapp">
+				<header id="header">
+					<nav>
+                        <div class="nav-wrapper">
+                            <a href="#" class="brand-logo center titre">ToDoList</a>
+                        </div>
+                    </nav>
+					<h2 class="center-align">Vous avez <span class="emphasis">{{getTotalTodos()}}</span> à faire</h2>
+				</header>       
+				<section class="center-align" id="main">
+					<ul>
+				        <li ng-repeat="todo in todos" >
+						    <input type="checkbox" class="filled-in" id="todo{{todo.id}}" ng-model="todo.done" ng-click="affCachClearButt(); saveTodos()" checked="checked" />
+					 <label for="todo{{todo.id}}" class="done-{{todo.done}}">{{todo.titre}} <a class="btn-floating btn-small waves-effect waves-light red" id="Ajouter" class="add-btn" ng-click="infoTodo(todo)"><i class="material-icons">info_outline</i></a>
+				    	    <a class="btn-floating btn-tiny waves-effect waves-light red" id="Ajouter" class="add-btn" ng-click="editTodo(todo)"><i class="material-icons">mode_edit</i></a>
+				    	    <a class="btn-floating btn-tiny waves-effect waves-light red" id="Ajouter" class="add-btn" ng-click="removeTodo(todo)"><i class="material-icons">delete</i></a></label>
+				       <br/><br/> </li>
+				    </ul>
+				    <a class="btn-floating btn-tiny waves-effect waves-light red" id="Ajouter" class="add-btn" ng-click="addTodo()"><i class="material-icons">add</i></a>
+				    <button id="clear" class="clear-btn" ng-click="clearCompleted()">Effacer</button>
+				</section>
+			</section>
+		</div>
+	</body>
+    <script type="text/javascript" src="js/purePopup.js"></script>
+
+</html>

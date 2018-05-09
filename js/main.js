@@ -1,6 +1,8 @@
 $(document).ready( function() {
 
-	
+	$('.carousel').carousel({
+        interval: 2000
+    })
     // Logo
 	var $logo 	= $('#logo');
     if (location.href.indexOf("#") != -1 && location.href.substr(location.href.indexOf("#"))!='#about') 
