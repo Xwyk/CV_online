@@ -1,0 +1,87 @@
+.demande{
+	margin-left: 28vw;
+}
+html{
+	background: rgba(202,220,239,0.8);
+}
+.deco{
+	margin-top: 0px;
+	width: 100vw;
+	height: 10vmin;
+	background: rgba(0,76,153,0.8);
+	font-size: 8vmin;
+	text-align: center;
+	border-radius: 20px;
+}
+input{
+	width: 15vmax;
+	height: 4vmin;
+	font-size: 4vmin
+}
+button{
+	width: 15vmin;
+	height: 6vmin;
+	font-size: 3vmin;
+	text-align: center;
+}
+h1{
+	font-size: 4vmin
+}
+a{
+	font-size: 4vmin;
+	background: rgba(0,76,153,0.8);
+    border-radius: 10px;
+	
+}
+footer{
+	margin-left: 29vw;
+    border: 1px solid blue;
+    width: 46vmin;
+    height: 24vmin;
+    font-size: 3vmin;
+}
+footer2{
+
+	font-size: 3vmin;
+}
+
+#menu-deroulant, #menu-deroulant ul {
+	width:29vmin;
+	height: 3vmin;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+
+}
+#menu-deroulant {
+/* on centre le menu dans la page */
+    text-align: center;
+}
+#menu-deroulant li {
+/* on place les liens du menu horizontalement */
+    display: inline-block;
+}
+#menu-deroulant ul li {
+/* on enlève ce comportement pour les liens du sous menu */
+    display: inherit;
+}
+#menu-deroulant a {
+    text-decoration: none;
+    display: block;
+	color:#000;
+
+}
+#menu-deroulant ul {
+    position: relative;
+/* on cache les sous menus complètement sur la gauche */
+    left: -100em;
+    text-align: center;
+    z-index: 1000;
+
+}
+#menu-deroulant li:hover ul {
+/* Au survol des li du menu on replace les sous menus */
+    left: auto;
+}
+
