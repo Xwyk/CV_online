@@ -23,7 +23,14 @@
     <script src="js/main.js"></script>
 </head>
 <body class="bg-fixed bg-1">
+    <?php include "php/compteur.php";?>
     <div class="main-container" style="border-radius: 10px">
+        <div class="compteur">
+            <span class="label label-default"><?php $temp=$compte/1000; $temp=(int)$temp;print "$temp"; $compte=($compte-$temp*1000)?></span>
+            <span class="label label-default"><?php $temp=$compte/100; $temp=(int)$temp;print "$temp" ; $compte=($compte-$temp*100)?></span>
+            <span class="label label-default"><?php $temp=$compte/10; $temp=(int)$temp;print "$temp" ; $compte=($compte-$temp*10)?></span>
+            <span class="label label-default"><?php $temp=$compte;print "$temp"?></span>
+        </div>
         <div class="main wrapper clearfix">
               <!-- Header Start -->
         <header id="header" style="text-align: center; min-width: 532px;">
@@ -32,7 +39,7 @@
                     <img src="images/profilepicture.jpg" alt="profilepicture" style="height: 100px; width: 100px ;border-radius: 50px;">
                 </div>
                 <div>
-                    <h2 style="text-align: center;">Florian LEBOUL </h2>
+                    <h2 style="text-align: center;">Florian LEBOUL </h2>
                     <h4 style="text-align: center;">Informaticien Systèmes et Réseaux</h4></div>
                 </div>
             </header>
@@ -41,25 +48,25 @@
                     <li class='tab' id="tab-about">
                         <a href="#about">
                             <i class="fas fa-home"></i>
-                            <span>   À propos de moi</span>
+                            <span>   À propos de moi</span>
                         </a>
                     </li>
                     <li class='tab'>
                         <a href="#resume">
                             <i class="far fa-list-alt"></i>
-                            <span>   CV</span>
+                            <span>   CV</span>
                         </a>
                     </li>
                     <li class='tab'>
                         <a href="#portfolio">
                             <i class="fas fa-project-diagram"></i>
-                            <span>   Projets</span>
+                            <span>   Projets</span>
                         </a>
                     </li>
                     <li class='tab'>
                         <a href="#contact">
                             <i class="fas fa-user"></i>
-                            <span>   Contact</span>
+                            <span>   Contact</span>
                         </a>
                     </li>
                 </ul>
@@ -83,9 +90,9 @@
                             <div class="g1">
                                 <div class="main-links sidebar">
                                     <ul>
-                                        <li><i class="fas fa-map-marker-alt"></i>  Pont-Saint-Martin, 44860<br>      Région Nantaise</li>
-                                        <li><i class="fas fa-car"></i>  Permis B / Véhicule personnel</li>
-                                        <li><i class="fas fa-certificate"></i>  BAC +2 : DUT Informatique</li>
+                                        <li><i class="fas fa-map-marker-alt"></i>  Pont-Saint-Martin, 44860<br>      Région Nantaise</li>
+                                        <li><i class="fas fa-car"></i>  Permis B / Véhicule personnel</li>
+                                        <li><i class="fas fa-certificate"></i>  BAC +2 : DUT Informatique</li>
                                     </ul>
                                 </div>
                             </div>
@@ -94,7 +101,7 @@
                                 <div class="g1">
                                     <div class="item-box clearfix">
                                         <div class="item-data">
-                                            <h3><i class="far fa-envelope fa-2x"></i><a href="mailto:fleboul.pro@florian-leboul.ovh">  fleboul.pro@florian-leboul.ovh</a></h3>
+                                            <h3><i class="far fa-envelope fa-2x"></i><a href="mailto:fleboul.pro@florian-leboul.ovh">  fleboul.pro@florian-leboul.ovh</a></h3>
                                             <p>Adresse mail</p>
                                         </div>
                                     </div>
@@ -102,7 +109,7 @@
                                 <div class="g1">
                                     <div class="item-box clearfix">
                                         <div class="item-data">
-                                            <h3><i class="fab fa-linkedin-in fa-2x"></i><a href="https://www.linkedin.com/in/florian-leboul-697abb107/">  Florian LEBOUL</a></h3>
+                                            <h3><i class="fab fa-linkedin-in fa-2x"></i><a href="https://www.linkedin.com/in/florian-leboul-697abb107/">  Florian LEBOUL</a></h3>
                                             <p>LinkedIn</p>
                                         </div>
                                     </div>
@@ -110,7 +117,7 @@
                                 <div class="g1">
                                     <div class="item-box clearfix">
                                         <div class="item-data">
-                                            <h3><i class="fas fa-phone fa-2x"></i><a href="tel:+33605410616">  06 05 41 06 16</a></h3>
+                                            <h3><i class="fas fa-phone fa-2x"></i><a href="tel:+33605410616">  06 05 41 06 16</a></h3>
                                             <p>Téléphone</p>
                                         </div>
                                     </div>
@@ -442,15 +449,15 @@
                         <section class="clearfix">
                             <div class="g1">
                                 <h3>Adresse mail</h3>
-                                <h6><i class="far fa-envelope fa-1x"></i><a href="mailto:fleboul.pro@florian-leboul.ovh">   fleboul.pro@florian-leboul.ovh</a></h6>
+                                <h6><i class="far fa-envelope fa-1x"></i><a href="mailto:fleboul.pro@florian-leboul.ovh">   fleboul.pro@florian-leboul.ovh</a></h6>
                             </div>
                             <div class="g1">
                                 <h3>Téléphone</h3>
-                                <h6><i class="fas fa-phone fa-1x"></i><a href="tel:+33605410616">   06 05 41 06 16</a></h6>
+                                <h6><i class="fas fa-phone fa-1x"></i><a href="tel:+33605410616">   06 05 41 06 16</a></h6>
                             </div>
                             <div class="g1">
                                 <h3>LinkedIn</h3>
-                                <h6><i class="fab fa-linkedin-in fa-1x"></i><a href="https://www.linkedin.com/in/florian-leboul-697abb107/">   Florian LEBOUL</a></h6>
+                                <h6><i class="fab fa-linkedin-in fa-1x"></i><a href="https://www.linkedin.com/in/florian-leboul-697abb107/">   Florian LEBOUL</a></h6>
                             </div>
                             <div class="break"></div>
                         </section>
