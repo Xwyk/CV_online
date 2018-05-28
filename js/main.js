@@ -4,7 +4,7 @@ $(document).ready( function() {
         interval: 2000
     })
     // Logo
-	var $logo 	= $('#logo');
+	var $logo=$('#logo');
     if (location.href.indexOf("#") != -1 && location.href.substr(location.href.indexOf("#"))!='#about') 
        	$logo.show();
     else
@@ -15,6 +15,11 @@ $(document).ready( function() {
     $('#showaffmoto').hide();
     $('#showskate').hide();
     $('#showclavier').hide();
+    $('#showbtaudio').hide();
+    $('#show3dprinter').hide();
+    $('#showcalc').hide();
+    $('#showrpi').hide();
+    $('#showdomotique').hide();
 	// Show logo 
 	$('#tab-container .tab a').click(function() {
 	  $logo.slideDown('slow');

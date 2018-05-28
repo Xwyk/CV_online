@@ -23,7 +23,7 @@
     <script src="js/main.js"></script>
 </head>
 <body class="bg-fixed bg-1">
-    <div class="main-container">
+    <div class="main-container" style="border-radius: 10px">
         <div class="main wrapper clearfix">
               <!-- Header Start -->
         <header id="header" style="text-align: center; min-width: 532px;">
@@ -254,7 +254,7 @@
                         <section class="clearfix">
                             <div class="g1">
                                 <div class="image" >
-                                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel slide" data-ride="carousel">
                                         <div class="carousel-inner" role="listbox">
                                             <div class="carousel-item active">
                                                 <img class="d-block img-fluid g1 img-projets" src="images/florimetre_1.jpg" alt="First slide">
@@ -317,7 +317,7 @@
                             </div>      
                             <div class="g1">
                                 <div class="image">
-                                    <img src="images/alarme.jpg" style="border-radius: 10px"/>
+                                    <img src="images/alarme.jpg" alt="alarme" style="border-radius: 10px"/>
                                     <div class="image-overlay" style="border-radius: 10px">
                                         <div class="image-link">
                                             <button id="btnalarme" type="button" class="btn btn-primary" onclick="showHideProjects('alarme');">Voir plus</button>
@@ -331,7 +331,7 @@
                             </div>    
                             <div class="g1">
                                 <div class="image">
-                                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel slide" data-ride="carousel">
                                         <div class="carousel-inner" role="listbox">
                                             <div class="carousel-item active">
                                                 <img class="d-block img-fluid g1 img-projets" src="images/clavier_1.jpg" alt="First slide">
@@ -365,7 +365,77 @@
                                 <div id="showmeteo" >
                                     <p>Projet de site météo réalisé dans le cadre scolaire. Utilisation de HTML, CSS, JavaScript, JQuery, et de l'API OpenWeatherMap afin de    récupérer les informations météorologiques d'une ville choisie. <a href="html/meteo/index.html">Voir le site</a></p>
                                 </div>
-                            </div>     
+                            </div>
+                            <div class="g1">
+                                <div class="image">
+                                    <img src="images/meteo.jpg" alt="btaudio" style="border-radius: 10px"/>
+                                    <div class="image-overlay" style="border-radius: 10px;">
+                                        <div class="image-link">
+                                            <button id="btnbtaudio" type="button" class="btn btn-primary" onclick="showHideProjects('btaudio');">Voir plus</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h5>Module audio Bluetooth</h5>
+                                <div id="showbtaudio" >
+                                    <p>Projet personnel réalisé sur la thématique de rendre n'importe quel casque audio bluetooth. Conçu sur la base d'un module audio KRC-86B fonctionnant en 4.0 low energy, couplé à deux batteries pour une capacité totale de 12Ah. développement d'une fonctionnalité NFC facilitant la connection au module. Autonomie constatée en utilisation "soirée" (8h/semaine) + "trajets" (5-7h/semaine) : 9 mois.</p>
+                                </div>
+                            </div>
+                            <div class="g1">
+                                <div class="image">
+                                    <img src="images/meteo.jpg" alt="3d printer" style="border-radius: 10px"/>
+                                    <div class="image-overlay" style="border-radius: 10px;">
+                                        <div class="image-link">
+                                            <button id="btn3dprinter" type="button" class="btn btn-primary" onclick="showHideProjects('3dprinter');">Voir plus</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h5>Imprimante 3D RepRap</h5>
+                                <div id="show3dprinter" >
+                                    <p>Projet personnel en cours. Etude et réalisation d'une imprimante 3D reprap, basée sur une Prusa i3, avec un volume d'impression d'environ 20x20x20. Le contrôleur est un arduino Mega sous Marlin. L'imprimante peut fonctionner pilotée par un PC ou en mode autonome, avec une carte SD.</p>
+                                </div>
+                            </div>  
+                            <div class="g1">
+                                <div class="image">
+                                    <img src="images/meteo.jpg" alt="graph 35+" style="border-radius: 10px"/>
+                                    <div class="image-overlay" style="border-radius: 10px;">
+                                        <div class="image-link">
+                                            <button id="btncalc" type="button" class="btn btn-primary" onclick="showHideProjects('calc');">Voir plus</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h5>Calculatrice Graph 35+</h5>
+                                <div id="showcalc" >
+                                    <p>Projet personnel. Remplacement du firmware d'origine de la graph 35+ par celui de la graph 75+. Ce dernier donne accès à une rom bridée sur la 35, et permet de développer et d'intégrer des applications codées en C directement sous le menu principal.</p>
+                                </div>
+                            </div>    
+                            <div class="g1">
+                                <div class="image">
+                                    <img src="images/meteo.jpg" alt="RPI minitel" style="border-radius: 10px"/>
+                                    <div class="image-overlay" style="border-radius: 10px;">
+                                        <div class="image-link">
+                                            <button id="btnrpi" type="button" class="btn btn-primary" onclick="showHideProjects('rpi');">Voir plus</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h5>Minitel Raspberry</h5>
+                                <div id="showrpi" >
+                                    <p>Projet personnel en cours. Réutilisation d'un minitel avec intégration d'un raspberry pi zéro, et réalisation d'une carte permettant de convertir la sortie vidéo du raspberry. Intégration de bibliothèques permettant de connecter le clavier.</p>
+                                </div>
+                            </div>   
+                            <div class="g1">
+                                <div class="image">
+                                    <img src="images/meteo.jpg" alt="domotique" style="border-radius: 10px"/>
+                                    <div class="image-overlay" style="border-radius: 10px;">
+                                        <div class="image-link">
+                                            <button id="btndomotique" type="button" class="btn btn-primary" onclick="showHideProjects('domotique');">Voir plus</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h5>Domotique Arduino</h5>
+                                <div id="showdomotique" >
+                                    <p>Projet personnel en cours. Réalisation d'une centrale domotique basée sur un microcontrôleur Arduino. La centrale communique en 433MHz, Wi-Fi, Bluetooth, 2.4GHz et GSM. Elle est contrôlable via Wi-Fi ou GSM, puis redistribue la commande au module souhaité. Aucune utilisation de cloud n'est nécéssaire, toutes les données sont locales.</p>
+                                </div>
+                            </div>
                         </section>
                     </div>
                     <div id="contact" style="text-align: center">
