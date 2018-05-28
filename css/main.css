@@ -504,6 +504,15 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
   background-color: #ec971f;
 }
 
+.label-primary {
+  background-color: #337ab7;
+}
+
+.label-primary[href]:hover,
+.label-primary[href]:focus {
+  background-color: #286090;
+}
+
 /* Meters */
 .meter { 
   height: 24px;  /* Can be anything */

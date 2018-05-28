@@ -132,7 +132,7 @@
                                 <ul class="no-list work">
                                     <li>
                                         <h5>
-                                            Technicien Systèmes<br class="rwd-break"> et Réseaux<br><i class="fas fa-home"></i> : 4CAD Group
+                                            Technicien Systèmes<br class="rwd-break"> et Réseaux<br><i class="fas fa-home"></i> : 4CAD Group, Nantes
                                         </h5>
                                         <span class="label label-danger">2018-Maintenant</span>
                                         <p>
@@ -141,7 +141,7 @@
                                     </li>
                                     <li>
                                         <h5>
-                                            AED TICE<br><i class="fas fa-home"></i> : Lycée Jean-Perrin
+                                            AED TICE<br><i class="fas fa-home"></i> : Lycée Jean-Perrin, Rezé
                                         </h5>
                                         <span class="label label-warning">2017-2018</span>
                                         <p>
@@ -150,7 +150,16 @@
                                     </li>
                                     <li>
                                         <h5>
-                                            Technicien GED<br><i class="fas fa-home"></i> : CAF Loire-Atlantique
+                                            Technicien Support IT<br><i class="fas fa-home"></i> : Proservia, Nantes
+                                        </h5>
+                                        <span class="label label-primary">Septembre 2017</span>
+                                        <p>
+                                            Mission de deux semaines avec pour objectif principal l'installation physique des postes suite à des déménagements de bureaux (mise en place, ergonomie, cable management). Préparation au déploiement des machines. 
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h5>
+                                            Technicien GED<br><i class="fas fa-home"></i> : CAF Loire-Atlantique, Nantes
                                         </h5>
                                         <span class="label label-info">Août 2015</span>
                                         <p>
@@ -164,7 +173,7 @@
                                 <ul class="no-list work">
                                     <li>
                                         <h5>
-                                            DUT Informatique<br><i class="fas fa-home"></i> : IUT de Vannes
+                                            DUT Informatique<br><i class="fas fa-home"></i> : IUT de Vannes, Vannes
                                         </h5>
                                         <span class="label label-default">2015-2017</span>
                                         <p>
@@ -173,7 +182,7 @@
                                     </li>
                                     <li>
                                         <h5>
-                                            BAC STI2D SIN<br><i class="fas fa-home"></i> : Lycée Jean-Perrin
+                                            BAC STI2D SIN<br><i class="fas fa-home"></i> : Lycée Jean-Perrin, Rezé
                                         </h5>
                                         <span class="label label-success">2012-2015</span>
                                         <p>
