@@ -20,6 +20,7 @@
 </head>
 <body class="bg-fixed bg-1">
     <?php include "php/compteur.php";?>
+    <?php include "php/ip.php";?>
     <div class="main-container" style="border-radius: 10px">
         <div id="visitorscompt" class="compteur">
             <span class="label label-default"><?php $temp=$compte/1000; $temp=(int)$temp;print "$temp"; $compte=($compte-$temp*1000)?></span>

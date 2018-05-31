@@ -8,7 +8,7 @@ session_start();
     }
     if(!isset($_SESSION['recup_ip'])){
         $_SESSION['recup_ip'] = 'recup_ippip';
-        fputs($ip_f, date("Y-m-d H:i:s"));
+        fputs($ip_f, $compte);
         fputs($ip_f, " : ");
         fputs($ip_f, get_ip());
         fputs($ip_f, "\n");
