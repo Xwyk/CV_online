@@ -2,5 +2,3 @@ AuthUserFile /home/florianlnf/www/geo/.htpasswd
 AuthName "Identifiants requis"
 AuthType Basic
 Require valid-user
-
-DirectoryIndex seegeo.html

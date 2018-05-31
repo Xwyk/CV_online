@@ -8,7 +8,7 @@ function initMap() {
         center: {lat: 46.637312, lng: 2.427686}
     });
 }
-$.post('../php/php.php', {'latitude': 47.89, 'longitude': -1.7598},function (data){
+$.post('seegeo.php',function (data){
     datar=data;  
     remplir(datar);
 });
