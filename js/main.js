@@ -28,6 +28,7 @@ $(document).ready( function() {
 	$('#tab-about').click(function() {
 	  $logo.slideUp('slow');
 	});	
+
 function animMeter(){
     $(".meter > span").each(function() {
                 $(this)
